@@ -5,7 +5,7 @@ By Packt
 
 This repository contains source code referenced in [Learning Web Development with Bootstrap and Angular, Second Edition] (https://www.packtpub.com/web-development/learning-web-development-bootstrap-and-angular-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785880810) book. 
 
-## Book Description
+## About the Book
 
 Two of the most popular front-end frameworks, Angular and Bootstrap, have undergone a major overhaul to embrace emerging web technologies so that developers can build cutting-edge web applications. You can build high-quality single page apps with elegant user interfaces by combining the power of both these tools.
 
@@ -27,12 +27,13 @@ The source code is organized by individual chapters. Code corresponding to each 
 
 Please send your questions and comments to author Sergey Akopkokhyants ([email](mailto:akserg@gmail.com))  
 
-## Suggestions and Feedback
-
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
-
 ## Related Products
 
 * [Bootstrap Site Blueprints](https://www.packtpub.com/web-development/bootstrap-site-blueprints?utm_source=github&utm_medium=repository&utm_campaign=9781782164524)
 * [AngularJS Web Application Development Cookbook](https://www.packtpub.com/web-development/angularjs-web-application-development-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781783283354)
 * [Building a Responsive Website with Bootstrap [Video]](https://www.packtpub.com/web-development/building-responsive-website-bootstrap-video?utm_source=github&utm_medium=repository&utm_campaign=9781782164982)
+
+
+## Suggestions and Feedback
+
+[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
