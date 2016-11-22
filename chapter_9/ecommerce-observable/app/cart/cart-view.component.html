@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div *ngIf="cart.count">
+                <form #form="ngForm">
+                    <div class="table-responsive">
+                        <table class="table table-sm table-striped table-bordered table-cart">
+                            <tbody>
+                                <tr>
+                                    <td class="font-weight-bold">Title</td>
+                                    <td class="font-weight-bold">Price</td>
+                                    <td class="font-weight-bold">Count</td>
+                                    <td class="font-weight-bold">Amount</td>
+                                </tr>
+                                <tr *ngFor="let item of cart.items">
+                                    <td>{{item.product.title}}</td>
+                                    <td>{{item.product.price | currency:'USD':true:'1.2-2'}}</td>
+                                    <td>
+                                        <input type="number" name="{{item.product.id}}" min="1" 
+                                                [ngModel]="item.count"
+                                                (ngModelChange)="item.count = update($event, item)">
+                                    </td>
+                                    <td>{{item.amount | currency:'USD':true:'1.2-2'}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="emty-cart" *ngIf="!cart.count">The cart is empty!</div>
+        </div>
+        <div class="col-md-3">
+            <div class="card-block">
+                <form class="form-horizontal">
+                    <div class="form-group row">
+                        <label class="col-xs-3 col-form-label">Total</label>
+                        <div class="col-xs-9">
+                            <h4 class="form-control-static">{{cart.amount | currency:'USD':true:'1.2-2'}}</h4>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-block" [routerLink]="['/checkout']">Checkout</button>
+                            <button class="btn btn-secondary btn-block" [routerLink]="['/products']">Continue Shopping</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-danger btn-block" (click)="clearCart()">Clear Cart</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

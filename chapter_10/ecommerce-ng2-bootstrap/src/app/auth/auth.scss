@@ -1,0 +1,63 @@
+$text-color: #fff;
+$primary: #fff;
+$primary-dark: #777;
+$light-gray: #aaa;
+$font-light: 300;
+
+.auth-main {
+  align-items: center;
+  height: 80%;
+  width: 100%;
+
+  .auth-block {
+    border-radius: 5px;
+    background-color: $light-gray;
+    color: #fff;
+    padding: 32px;
+
+    h1 {
+        font-weight: $font-light;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .auth-link {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration: none;
+        outline: none;
+        transition: all 0.2s ease;
+        color: $primary;
+        &:hover {
+            color: $primary-dark;
+        }
+    }
+
+    .control-label {
+        padding-top: 8px;
+        color: $text-color;
+    }
+
+    a.forgot-pass {
+        display: block;
+        text-align: right;
+        margin-top: 8px;
+        float: right;
+        z-index: 2;
+        position: relative;
+    }
+
+    .btn-auth {
+        color: #000!important;
+    }
+  }
+}

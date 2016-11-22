@@ -1,0 +1,47 @@
+<ul class="nav navbar-nav pull-xs-right">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+            role="button" aria-haspopup="true" aria-expanded="false">
+            Cart: {{cart.amount | currency:'USD':true:'1.2-2'}} ({{cart.count}} items)
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="cart">
+
+            <div *ngIf="cart.count">
+                <div class="table-responsive">
+                    <table class="table table-sm table-striped table-bordered table-cart">
+                        <tbody>
+                            <tr>
+                                <td class="font-weight-bold">Title</td>
+                                <td class="font-weight-bold">Price</td>
+                                <td class="font-weight-bold">Count</td>
+                                <td class="font-weight-bold">Amount</td>
+                            </tr>
+                            <tr *ngFor="let item of cart.items">
+                                <td>{{item.product.title}}</td>
+                                <td>{{item.product.price | currency:'USD':true:'1.2-2'}}</td>
+                                <td>{{item.count}}</td>
+                                <td>{{item.amount | currency:'USD':true:'1.2-2'}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="total-cart pull-xs-right">
+                            <b>Total: {{cart.amount | currency:'USD':true:'1.2-2'}}</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a [routerLink]="['/cart']" class="btn btn-primary pull-xs-right btn-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
+                        <a [routerLink]="['/checkout']" class="btn btn-success pull-xs-right btn-cart">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> Checkout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="emty-cart" *ngIf="!cart.count">The cart is empty!</div>
+        </div>
+    </li>
+</ul>

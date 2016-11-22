@@ -1,0 +1,16 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+      <a class="navbar-brand" href="">Dream Bean</a>
+
+      <div class="nav navbar-nav">
+        <a class="nav-item nav-link" (click)="logout()" *ngIf="authService.authenticated">Sign out</a>
+      </div>
+
+      <db-cart-menu *ngIf="authService.authenticated"></db-cart-menu>
+    </div>
+  </div>
+</nav>

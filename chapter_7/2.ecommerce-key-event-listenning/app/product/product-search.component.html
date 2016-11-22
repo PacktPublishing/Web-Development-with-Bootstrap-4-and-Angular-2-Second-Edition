@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header">Quick Shop</div>
+    <div class="input-group">
+        <input #search type="text" class="form-control" placeholder="Search for..." 
+              (keyup)="searchChanged(search.value)">
+        <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button" 
+                   [disabled]="disabled"
+                   (click)="searchProduct(search.value)">Go!</button>
+        </span>
+    </div>
+</div>
