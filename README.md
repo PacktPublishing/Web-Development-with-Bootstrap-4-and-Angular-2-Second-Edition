@@ -1,4 +1,4 @@
-#Web Development with Bootstrap and Angular, Second Edition
+#Web Development with Bootstrap 4 and Angular 2, Second Edition
 By Packt
 
 ## Overview
