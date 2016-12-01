@@ -3,7 +3,7 @@ By Packt
 
 ## Overview
 
-This repository contains source code referenced in [Web Development with Bootstrap and Angular, Second Edition] (https://www.packtpub.com/web-development/learning-web-development-bootstrap-and-angular-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785880810) book. 
+This repository contains source code referenced in [Web Development with Bootstrap 4 and Angular 2, Second Edition] (https://www.packtpub.com/web-development/learning-web-development-bootstrap-and-angular-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781785880810) book. 
 
 ## About the Book
 
